@@ -59,7 +59,9 @@ int main(int arc, char* argv[])
       draw.Pause();
       stringstream ss;
       ss << setfill('0') << setw(3) << i;
-      draw.Save("../images/"+ss.str());
+      
+      //this line breaks shit
+      //draw.Save("../images/"+ss.str());
    }
    Eigen::VectorXd mu;
    fastslam.getBestPoseAndLandmark(mu);
